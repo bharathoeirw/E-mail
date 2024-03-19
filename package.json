@@ -1,0 +1,21 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.0",
+    "crypto": "^1.0.1",
+    "express": "^4.18.3",
+    "mysql2": "^3.9.2",
+    "nodemailer": "^6.9.11",
+    "sequelize": "^6.37.1",
+    "xlsx": "^0.18.5"
+  }
+}
