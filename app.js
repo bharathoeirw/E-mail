@@ -79,7 +79,6 @@ router.post("/exportData", async (req, res) => {
     archive.pipe(output);
     archive.append(buffer, { name: "EmployeeData.xlsx" });
 
-    // Finalize the ZIP archive
     archive.finalize();
   } catch (error) {
     console.error("Error exporting data:", error);
@@ -100,14 +99,14 @@ connection
   });
 
 async function sendEmail(from, to, filePath) {
-  // create reusable transporter object using the default SMTP transport
+
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com", // Correct SMTP server hostname
+    host: "smtp.gmail.com", 
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false, 
     auth: {
-      user: "bharathkumar1027@gmail.com", // Your Gmail email address
-      pass: "fijx vsuu cpkb eqdi", // Your Gmail app password
+      user: "bharathkumar1027@gmail.com", 
+      pass: "fijx vsuu cpkb eqdi", 
     },
   });
   
